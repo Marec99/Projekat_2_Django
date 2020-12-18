@@ -35,32 +35,32 @@
 </nav>
      <h2 class="text-center my-2">Izvrsite zeljene promene vezane za Mrezu:</h2>
     <div class="container my-4" >
-    <form class="row gy-2 gx-3 align-items-center" action="/mreza" method="post">
+    <form action="/mreza" method="post">
   <h3>Dodaj Mrezu:</h3>
     {% csrf_token %}
   <div class="col-auto">
-    <label class="visually-hidden" for="autoSizingInput">Naziv</label>
-    <input type="text" class="form-control" id="autoSizingInput" placeholder="naziv">
+    <label class="visually-hidden" for="naziv">Naziv</label>
+    <input type="text" class="form-control" id="naziv" placeholder="naziv">
   </div>
   <div class="col-auto">
-    <label class="visually-hidden" for="autoSizingInput">Dimenzije</label>
-    <input type="text" class="form-control"  placeholder="dimenzije">
+    <label class="visually-hidden" for="dimenzije">Dimenzije</label>
+    <input type="text" class="form-control" id="dimenzije" placeholder="dimenzije">
   </div>
   <div class="col-auto">
-    <label class="visually-hidden" for="autoSizingInput">DimenzijeKocke</label>
-    <input type="text" class="form-control"  placeholder="kocka">
+    <label class="visually-hidden" for="kocka">DimenzijeKocke</label>
+    <input type="text" class="form-control"  id="kocka" placeholder="kocka">
   </div>
   <div class="col-auto">
-    <label class="visually-hidden" for="autoSizingInput">JedinicaMere</label>
-    <input type="text" class="form-control"  placeholder="jedinica mere">
+    <label class="visually-hidden" for="jedinicaMere">JedinicaMere</label>
+    <input type="text" class="form-control" id="jedinicaMere" placeholder="jedinica mere">
   </div>
   <div class="col-auto">
-    <label class="visually-hidden" for="autoSizingInput">cena</label>
-    <input type="text" class="form-control"  placeholder="cena">
+    <label class="visually-hidden" for="cena">cena</label>
+    <input type="text" class="form-control" id="cena" placeholder="cena">
   </div>
   <div class="col-auto">
-    <label class="visually-hidden" for="autoSizingInput">gvozdje</label>
-    <input type="text" class="form-control"  placeholder="tip gvozdja">
+    <label class="visually-hidden" for="gvozdje">gvozdje</label>
+    <input type="text" class="form-control" id="gvozdje" placeholder="tip gvozdja">
   </div>
   <div class="col-auto">
     <button type="dodaj" class="btn btn-primary">Add</button>
