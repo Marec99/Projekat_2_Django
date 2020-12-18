@@ -33,18 +33,18 @@
     </div>
   </div>
 </nav>
-
+     <h2 class="text-center my-2">Izvrsite zeljene promene vezane za Mrezu:</h2>
     <div class="container my-4" >
-        <h2 class="text-center my-2">Izvrsite zeljene promene vezane za Mrezu:</h2>
-    <form class="row gy-2 gx-3 align-items-center">
+    <form class="row gy-2 gx-3 align-items-center" action="/mreza" method="post">
   <h3>Dodaj Mrezu:</h3>
+    {% csrf_token %}
   <div class="col-auto">
     <label class="visually-hidden" for="autoSizingInput">Naziv</label>
-    <input type="text" class="form-control" id="autoSizingInput" placeholder="Naziv">
+    <input type="text" class="form-control" id="autoSizingInput" placeholder="naziv">
   </div>
   <div class="col-auto">
     <label class="visually-hidden" for="autoSizingInput">Dimenzije</label>
-    <input type="text" class="form-control"  placeholder="Dimenzije">
+    <input type="text" class="form-control"  placeholder="dimenzije">
   </div>
   <div class="col-auto">
     <label class="visually-hidden" for="autoSizingInput">DimenzijeKocke</label>
@@ -63,7 +63,7 @@
     <input type="text" class="form-control"  placeholder="tip gvozdja">
   </div>
   <div class="col-auto">
-    <button type="submit" class="btn btn-primary">Add</button>
+    <button type="dodaj" class="btn btn-primary">Add</button>
   </div>
 </form>
     </div>
