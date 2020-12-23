@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Gvozdje(models.Model):
-    naziv = models.CharField(max_length=200)
+    naziv = models.CharField(max_length=50)
     jedinicaMere = models.CharField(max_length=4)
     cena_DIN = models.IntegerField(default=0)
 
