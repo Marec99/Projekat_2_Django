@@ -5,7 +5,13 @@ from . import views
 
 app_name = 'gvozdje'
 urlpatterns = [
+
+    path('register/', views.registerPage, name='register'),
+    path('login/', views.loginPage, name='login'),
+    path('logout/', views.logoutUser, name='logout'),
+
     path('', views.gvozdje, name='home'),
+    path('user', views.userPage, name='userPage'),
     path('mreza', views.createMreza, name='Mreza'),
     path('gvozdje', views.createGvozdje, name='Gvozdje'),
 
